@@ -14,6 +14,7 @@ const pwChecks = [
 
 import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
+import { toast } from "sonner";
 
 export default function SignupPage() {
   const router = useRouter();
@@ -43,6 +44,7 @@ export default function SignupPage() {
 
     if (!res.ok) {
       setError(data.error || "Registration failed. Please try again.");
+      toast.error("Registration failed", { description: data.error || "Please try again." });
       setLoading(false);
       return;
     }
@@ -57,7 +59,9 @@ export default function SignupPage() {
     setLoading(false);
     if (result?.error) {
       setError("Account created but login failed. Please login manually.");
+      toast.warning("Account created!", { description: "But login failed. Please login manually." });
     } else {
+      toast.success("Account created successfully!", { description: "Welcome to ResumeAI." });
       router.push("/dashboard");
       router.refresh();
     }

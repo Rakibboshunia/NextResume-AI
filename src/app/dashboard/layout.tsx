@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, FileText, Plus, LayoutTemplate, Bot, FileSignature, User, Settings, CreditCard, LogOut, Search, Bell } from "lucide-react";
+import { LayoutDashboard, FileText, Plus, LayoutTemplate, Bot, FileSignature, User, Settings, CreditCard, LogOut, Search, Bell, Briefcase } from "lucide-react";
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -36,6 +36,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             <SidebarItem href="/dashboard/templates" icon={<LayoutTemplate size={18} />} label="Templates" active={pathname === "/dashboard/templates"} />
             <SidebarItem href="/dashboard/assistant" icon={<Bot size={18} />} label="AI Assistant" active={pathname === "/dashboard/assistant"} />
             <SidebarItem href="/dashboard/cover-letters" icon={<FileSignature size={18} />} label="Cover Letters" active={pathname === "/dashboard/cover-letters"} />
+            <SidebarItem href="/dashboard/jobs" icon={<Briefcase size={18} />} label="Job Tracker" active={pathname === "/dashboard/jobs"} />
             
             <div className="my-6 border-t border-white/[0.04] pt-4"></div>
             
