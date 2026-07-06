@@ -7,7 +7,7 @@ export default function ProfilePage() {
   const [isSaving, setIsSaving] = useState(false);
   const [saved, setSaved] = useState(false);
   const [profile, setProfile] = useState({
-    fullName: "Rasel Bosunia",
+    fullName: "John Doe",
     jobTitle: "Frontend Developer"
   });
 
@@ -67,7 +67,7 @@ export default function ProfilePage() {
                <label className="text-sm font-medium text-slate-400">Email Address</label>
                <div className="relative">
                   <Mail className="absolute left-4 top-1/2 -translate-y-1/2 size-4 text-slate-400" />
-                  <input type="email" value="rasel@example.com" disabled className="w-full bg-white/5 border border-white/10 rounded-lg pl-11 pr-4 py-2.5 text-slate-400 opacity-70 cursor-not-allowed" />
+                  <input type="email" value="john@example.com" disabled className="w-full bg-white/5 border border-white/10 rounded-lg pl-11 pr-4 py-2.5 text-slate-400 opacity-70 cursor-not-allowed" />
                </div>
             </div>
          </div>

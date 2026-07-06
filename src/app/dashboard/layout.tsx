@@ -68,7 +68,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                     <img src="https://i.pravatar.cc/150?u=a042581f4e29026704d" alt="Profile" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
                  </div>
                  <div className="flex flex-col hidden sm:flex">
-                    <span className="text-sm font-semibold text-white leading-tight group-hover:text-indigo-400 transition-colors">Rasel Bosunia</span>
+                    <span className="text-sm font-semibold text-white leading-tight group-hover:text-indigo-400 transition-colors">John Doe</span>
                     <span className="text-xs text-slate-500 leading-tight">Frontend Developer</span>
                  </div>
               </div>

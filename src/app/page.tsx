@@ -81,10 +81,10 @@ export default function Home() {
                   <Image src="https://i.pravatar.cc/150?img=11" alt="Profile" width={64} height={64} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white">Rasel Bosunia</h3>
+                  <h3 className="text-xl font-bold text-white">John Doe</h3>
                   <p className="text-sm text-indigo-300 mt-0.5">Frontend Developer</p>
                   <div className="flex gap-3 text-[10px] text-slate-500 mt-1.5">
-                    <span>rasel@example.com</span>
+                    <span>john@example.com</span>
                     <span>Dhaka, Bangladesh</span>
                   </div>
                 </div>

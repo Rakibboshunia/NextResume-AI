@@ -52,7 +52,7 @@ export default function CreateResumePage() {
   const form = useForm<ResumeFormValues>({
     resolver: zodResolver(resumeSchema),
     defaultValues: {
-      personal: { fullName: "Rasel Bosunia", jobTitle: "Frontend Developer", email: "rasel@example.com", phone: "+880 1234 567890", location: "Dhaka, Bangladesh", portfolio: "", summary: "Passionate Frontend Developer with 4+ years of experience building modern web applications using React, Next.js and TypeScript. Skilled in creating responsive, user-friendly interfaces and optimizing performance." },
+      personal: { fullName: "John Doe", jobTitle: "Frontend Developer", email: "john@example.com", phone: "+880 1234 567890", location: "Dhaka, Bangladesh", portfolio: "", summary: "Passionate Frontend Developer with 4+ years of experience building modern web applications using React, Next.js and TypeScript. Skilled in creating responsive, user-friendly interfaces and optimizing performance." },
       experience: [{ jobTitle: "Senior Frontend Developer", company: "Fire AI Software Ltd.", location: "Dhaka, Bangladesh", startDate: "Jan 2022", endDate: "Present", current: true, description: "• Developed and maintained scalable web applications using React, Next.js and TypeScript.\n• Collaborated with design and backend teams to build high-quality products.\n• Improved application performance by 40% through optimization." }],
       education: [{ degree: "", university: "", startDate: "", endDate: "" }],
       skills: ""
