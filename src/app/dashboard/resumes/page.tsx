@@ -52,6 +52,7 @@ export default function ResumesPage() {
                        <Link href="/dashboard/create" className="px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded hover:bg-indigo-500">Edit</Link>
                        <button onClick={() => alert("Download started")} className="px-4 py-2 bg-white/10 text-white text-sm font-medium rounded hover:bg-white/20">Download</button>
                     </div>
+                   
                     {/* Mock Resume Paper */}
                     <div className="w-full h-full bg-white rounded shadow-sm p-4 overflow-hidden pointer-events-none">
                        <div className="w-1/3 h-4 bg-slate-200 rounded mb-2" />
