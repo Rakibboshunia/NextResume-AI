@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { ChevronDown, Sparkles } from "lucide-react";
 
@@ -39,6 +40,7 @@ export default function Navbar() {
           <Link href="/login" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
             Log in
           </Link>
+          
           <Link href="/signup" className="bg-indigo-600 hover:bg-indigo-500 text-white rounded-md px-5 py-2 text-sm font-medium transition-colors">
             Get Started
           </Link>
